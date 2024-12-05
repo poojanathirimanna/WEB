@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    padding-left: 10%;
+    animation: marquee 7s linear infinite;
+  }
+  
+body {
+  background-color: #111827; /* Tailwind's gray-900 */
+  /* Or choose any custom color */
+}
